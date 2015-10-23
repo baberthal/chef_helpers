@@ -5,17 +5,20 @@ gemspec
 
 group :development, :test do
   gem 'guard-rspec', require: false
-  gem 'rb-fsevent', require: false
-  gem 'ruby_gntp'
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'simplecov', require: false
+end
+
+group :local do
   gem 'pry'
   gem 'pry-theme'
   gem 'colorize', require: false
-  gem 'rubocop', require: false
-  gem 'rubocop-rspec', require: false
   gem 'reek', require: false
   gem 'flog', require: false
   gem 'overcommit'
-  gem 'ruby-lint', require: false, github: 'baberthal/ruby-lint'
   gem 'guard-yard', require: false
-  gem 'simplecov', require: false
+  gem 'rb-fsevent', require: false if RUBY_PLATFORM =~ /darwin/i
+  gem 'ruby-lint', require: false, github: 'baberthal/ruby-lint'
+  gem 'ruby_gntp'
 end
