@@ -1,0 +1,7 @@
+---
+directories:
+  - lib
+  - lib/rspec/matchers
+
+ignore_paths:
+  - spec/support
