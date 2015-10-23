@@ -21,4 +21,5 @@ group :local do
   gem 'rb-fsevent', require: false if RUBY_PLATFORM =~ /darwin/i
   gem 'ruby-lint', require: false, github: 'baberthal/ruby-lint'
   gem 'ruby_gntp'
+  gem 'rubycritic'
 end
