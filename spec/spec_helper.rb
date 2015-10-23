@@ -1,6 +1,10 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'simplecov'
-SimpleCov.start
+
+if ENV['COVERAGE']
+  require 'simplecov'
+  SimpleCov.start
+end
+
 require 'chef_helpers'
 
 Dir['./spec/support/**/*.rb'].each { |f| require f }
