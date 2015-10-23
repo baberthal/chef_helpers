@@ -15,4 +15,5 @@ group :development, :test do
   gem 'reek', require: false
   gem 'flog', require: false
   gem 'overcommit'
+  gem 'ruby-lint', require: false, github: 'baberthal/ruby-lint'
 end
