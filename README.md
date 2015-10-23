@@ -1,4 +1,6 @@
 # ChefHelpers
+[![Gem Version](https://badge.fury.io/rb/chef_helpers.svg)](https://badge.fury.io/rb/chef_helpers)
+[![Build Status](https://travis-ci.org/baberthal/chef_helpers.svg?branch=master)](https://travis-ci.org/baberthal/chef_helpers)
 
 This gem provides a set of helper methods to use in chef recipies. Currently, the only implemented method is `#encrypt_password`, which takes a plain-text password and generates a shadow hash for use by the User resource.
 
