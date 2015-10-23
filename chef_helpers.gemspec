@@ -10,7 +10,12 @@ Gem::Specification.new do |spec|
   spec.email         = ['morgan@jmorgan.org']
 
   spec.summary       = 'Provides a set of helper methods for chef recipes.'
-  spec.description   = File.read(File.expand_path('../README.md', __FILE__))
+  spec.description   = <<-EODES
+  This gem provides a set of helper methods to use in chef recipies.
+Currently, the only implemented method is `#encrypt_password`, \
+which takes a plain-text password and generates a shadow hash for use by the \
+Chef User resource.
+  EODES
   spec.homepage      = 'https://github.com/baberthal/chef_helpers.git'
   spec.license       = 'MIT'
 
