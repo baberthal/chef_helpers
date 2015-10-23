@@ -17,4 +17,5 @@ group :development, :test do
   gem 'overcommit'
   gem 'ruby-lint', require: false, github: 'baberthal/ruby-lint'
   gem 'guard-yard', require: false
+  gem 'simplecov', require: false
 end
