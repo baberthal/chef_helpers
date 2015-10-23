@@ -69,7 +69,7 @@ To release a new version, update the version number in `version.rb`, and then ru
 6. ???
 7. Profit
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/chef_helpers.
+Bug reports and pull requests are welcome on GitHub at https://github.com/baberthal/chef_helpers.
 
 ## License
 
