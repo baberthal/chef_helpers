@@ -4,12 +4,12 @@ source 'https://rubygems.org'
 gemspec
 
 group :development, :test do
-  gem 'guard-rspec', require: false
   gem 'rubocop', require: false
   gem 'rubocop-rspec', require: false
 end
 
 group :local do
+  gem 'guard-rspec', require: false
   gem 'simplecov', require: false
   gem 'pry'
   gem 'pry-theme'
