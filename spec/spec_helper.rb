@@ -1,7 +1,7 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'chef_helpers'
 
-Dir['spec/support/**/*.rb'].each { |f| require f }
+Dir['./spec/support/**/*.rb'].each { |f| require f }
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -14,6 +14,11 @@ RSpec.configure do |config|
 
   config.filter_run :focus
   config.run_all_when_everything_filtered = true
+
+  config.disable_monkey_patching!
+  config.warnings = true
+  config.default_formatter = 'doc' if config.files_to_run.one?
+  config.order = :random
 
   Kernel.srand config.seed
 end
