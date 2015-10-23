@@ -16,4 +16,5 @@ group :development, :test do
   gem 'flog', require: false
   gem 'overcommit'
   gem 'ruby-lint', require: false, github: 'baberthal/ruby-lint'
+  gem 'guard-yard', require: false
 end
